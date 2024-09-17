@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from demo.views import my_view
+from demo.views import my_view, my_view2, my_view3
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('django_prometheus.urls')),
-    path('myview/', my_view)
+    path('myview/', my_view),
+    path('myview2/', my_view2),
+    path('myview3/', my_view3)
 ]

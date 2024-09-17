@@ -2,3 +2,4 @@ django
 psycopg2-binary
 python-dotenv
 django_prometheus
+django_redis

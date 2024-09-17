@@ -136,3 +136,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 PROMETHEUS_METRICS_EXPORT_PORT = 8001
 PROMETHEUS_METRICS_EXPORT_ADDRESS = "0.0.0.0"
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django_prometheus.cache.backends.redis.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379'
+    }
+}
